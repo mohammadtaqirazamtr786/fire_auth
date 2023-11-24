@@ -1,5 +1,6 @@
 import 'package:achievement_view/achievement_view.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebasepr202210e/Screens/fetch.dart';
 import 'package:firebasepr202210e/input.dart';
 import 'package:flutter/material.dart';
 class add extends StatefulWidget {
@@ -34,6 +35,7 @@ class _addState extends State<add> {
               icon: Icon(Icons.emoji_emotions_outlined),
               color: Colors.green
           ).show(context);
+          Navigator.push(context, MaterialPageRoute(builder: (context) => fetch(),));
 
         }
       on FirebaseException catch(e)
