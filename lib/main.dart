@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebasepr202210e/Screens/add_data.dart';
 import 'package:firebasepr202210e/Screens/edit.dart';
 import 'package:firebasepr202210e/Screens/fetch.dart';
+import 'package:firebasepr202210e/Screens/product_add.dart';
 import 'package:firebasepr202210e/home.dart';
 import 'package:firebasepr202210e/signup.dart';
 import 'package:firebasepr202210e/splash.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: add(),
+      home: product_add(),
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
